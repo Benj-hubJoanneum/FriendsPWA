@@ -1,0 +1,479 @@
+body {
+    font-family: sans-serif;
+    color: #373D3F;
+    margin: 0;
+    max-width: 1500px;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header {
+    font-family: 'MV Boli', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(236, 103, 103);
+    color: aliceblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    max-width: 1500px;
+    margin: 0;
+}
+
+header img {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    border-radius: 0;
+    box-shadow: 0 0 ;
+}
+
+header div {
+    width: auto;
+    float: right;
+}
+
+header input {
+    width: auto;
+    visibility: collapse;
+}
+
+.me {
+    background-color: rgb(236, 92, 92);
+    color: aliceblue;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.friend {
+    border-bottom: .1em solid #a5a5a5;
+    position: relative;
+}
+
+.friend>span {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#subMenu1 {
+    visibility: collapse;
+}
+
+#subMenu2 {
+    visibility: collapse;
+}
+
+main {
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    max-width: 1500px;
+    margin: 0;
+}
+
+.you {
+    background-color: rgb(236, 92, 92);
+    color: aliceblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.you>div {
+    position: relative;
+}
+
+.you>div span {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#back {
+    box-shadow: 0 0;
+    width: auto;
+    position: absolute;
+    top: 0%;
+}
+
+.attributes {
+    position: relative;
+}
+
+
+.attribute {
+    border-bottom: .1em solid #a5a5a5;
+    position: relative;
+}
+
+.message {
+    padding-bottom: 1em;
+    border-bottom: .1em solid #a5a5a5;
+}
+
+.attribute>span {
+    position: absolute;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+}
+
+.content {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+body>span {
+    font-style: bold;
+    display: table;
+    color: rgb(236, 92, 92);
+}
+
+.message img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+button {
+    color: aliceblue;
+    background-color: rgb(236, 92, 92);
+    border: 0;
+}
+
+#comingSoon {
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    border: 0;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#comingSoonImg {
+    box-shadow: 0 0;
+    border-radius: 0;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+button {
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#sendMessage {
+    text-align: center;
+}
+
+#dialogSendMessage {
+    position: flex;
+    top: 50%;
+    left: 50%;
+    border: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+dialog>div {
+    color: aliceblue;
+    background-color: rgb(236, 92, 92);
+}
+
+dialog>input {
+    width: 80%;
+}
+
+#notification {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    background-color: gray;
+    color:  aliceblue;
+    border-radius: 1em;
+    padding: 0 1em 0 1em;
+    margin:1em;
+    border-color: gray;
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 1.5em;
+    }
+
+    header span {
+        margin: 0 0 0 1em;
+    }
+
+    header img {
+        height: 1em;
+        margin: .3em 1em auto auto;
+    }
+
+    .me {
+        margin-top: 2.4em;
+        height: 8em;
+    }
+
+    #owner {
+        height: 6em;
+        width: 6em;
+        margin: 1em 1em 1em 3.5em;
+    }
+
+    .list {
+        margin: 0em 1em 0em 1em;
+    }
+
+    .friend {
+        padding: .5em;
+    }
+
+    .friend>img {
+        height: 3em;
+        width: 3em;
+    }
+
+    .friend>span {
+        font-size: 1em;
+        margin: 0 .5em;
+    }
+
+    #menuAdd {
+        height: 2em;
+        width: 2em;
+        margin-bottom: 1em;
+    }
+
+    .subMenu {
+        height: 1em;
+        width: 1em;
+        margin-bottom: .5em;
+    }
+
+    .you {
+        margin-top: 2.45em;
+        height: 8em;
+    }
+
+    .you>div span {
+        font-size: 2.5em;
+        margin: 0 .4em;
+    }
+
+    .you>div img {
+        margin-left: 4em;
+    }
+
+    #back {
+        height: 1.5em;
+        margin: .5em;
+    }
+
+    .attribute {
+        padding: .5em;
+        margin: .5em;
+    }
+
+    .attribute>img {
+        height: 3em;
+        width: 3em;
+        border: 0;
+    }
+
+    .attribute>span {
+        font-size: 1em;
+        margin: .5em 1em .5em 1em;
+    }
+
+    body>span {
+        font-size: 1em;
+        margin: .5em auto;
+    }
+
+    .messages {
+        margin: .5em;
+        font-size: 1em;
+    }
+
+    button {
+        padding: .5em;
+        border-radius: .5em;
+        margin: 1.5em;
+    }
+
+    #comingSoonImg {
+        padding: .5em;
+    }
+
+    dialog>div {
+        margin: 0;
+        padding: .5em 1em .5em 1em;
+        font-size: 1em;
+    }
+
+    dialog {
+        margin: 0;
+        padding: 0;
+    }
+
+    #notification {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 600px) {
+    header {
+        font-size: 3em;
+    }
+
+    header span {
+        margin: .0 0 0 1em;
+    }
+
+    header img {
+        height: 1em;
+        margin: .3em 1em auto auto;
+    }
+
+    .me {
+        margin-top: 4.9em;
+        height: 16em;
+    }
+
+    #owner {
+        height: 12em;
+        width: 12em;
+        margin: 2em 2em 2em 7em;
+    }
+
+    .list {
+        margin: 0em 2em 0em 2em;
+    }
+
+    .friend {
+        padding: 1em;
+    }
+
+    .friend>img {
+        height: 6em;
+        width: 6em;
+    }
+
+    .friend>span {
+        font-size: 2em;
+        margin: 0 1em;
+    }
+
+    #menuAdd {
+        height: 4em;
+        width: 4em;
+        margin-bottom: 2em;
+    }
+
+    .subMenu {
+        height: 2em;
+        width: 2em;
+        margin-bottom: 1em;
+    }
+
+    .you {
+        margin-top: 4.9em;
+        height: 16em;
+    }
+
+    .you>div span {
+        font-size: 5em;
+        margin: 0 .4em;
+    }
+
+    .you>div img {
+        margin-left: 8em;
+    }
+
+    #back {
+        height: 3em;
+        margin: 1em;
+    }
+
+    .attribute {
+        padding: 1em;
+        margin: 1em;
+    }
+
+    .attribute>img {
+        height: 6em;
+        width: 6em;
+        border: 0;
+    }
+
+    .attribute>span {
+        font-size: 2em;
+        margin: .5em 1em .5em 1em;
+    }
+
+    body>span {
+        font-size: 2em;
+        margin: 1em auto;
+    }
+
+    .messages {
+        margin: 1em;
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 1em;
+        border-radius: .5em;
+        margin: 3em;
+    }
+
+    #comingSoonImg {
+        padding: 1em;
+    }
+
+    dialog>div {
+        margin: 0;
+        padding: .5em 1em .5em 1em;
+        font-size: 2em;
+    }
+
+    dialog {
+        margin: 0;
+        padding: 0;
+    }
+
+    #notification {
+        font-size: 2em;
+    }
+}
