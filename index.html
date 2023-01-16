@@ -1,0 +1,88 @@
+<!--
+TEMPLATE AUTHORS: Müslüm Atas & Mathias Knoll
+AUTHOR: Benjamin Lamprecht
+DESCRIPTION: Friends website. 
+LAST CHANGE: 30.12.2022
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Friends</title>
+  <link rel="icon" href="img\ic_tab_friends.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Manifest and Styles
+  The manifest file lists all the information about the website in a JSON format und usually resides in the root folder of a web app -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- App Name -->
+  <meta name="application-name" content="Friends" />
+  <!-- On iOS, you can specify a web application title for the launch icon -->
+  <meta name="apple-mobile-web-app-title" content="Friends" />
+
+  <!-- Capability -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <!-- Hiding Safari User Interface Components in standalone mode-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <!-- Starting URL -->
+  <meta name="msapplication-starturl" content="/index.html" />
+
+  <!-- Theme/Display -->
+  <meta name="theme-color" content="white" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+  <!-- Splash Screens for iOS -->
+  <link href="icons/apple_splash_2048-2732.png" sizes="2048x2732" rel="apple-touch-startup-image" />
+  <link href="icons/apple_splash_1668-2224.png" sizes="1668x2224" rel="apple-touch-startup-image" />
+  <link href="icons/apple_splash_1536-2048.png" sizes="1536x2048" rel="apple-touch-startup-image" />
+  <link href="icons/apple_splash_1125-2436.png" sizes="1125x2436" rel="apple-touch-startup-image" />
+  <link href="icons/apple_splash_1242-2208.png" sizes="1242x2208" rel="apple-touch-startup-image" />
+  <link href="icons/apple_splash_750-1334.png" sizes="750x1334" rel="apple-touch-startup-image" />
+  <link href="icons/apple_splash_640-1136.png" sizes="640x1136" rel="apple-touch-startup-image" />
+
+</head>
+
+<body class="fullscreen">
+  <header class="friends">
+    <span>Friends</span>
+    <div>
+      <input type="text" id="search">
+      <img id="searchIcon" src="img\lupe-suchen.png" alt="search">
+    </div>
+  </header>
+
+  <section class="me">
+    <div>
+      <img id="owner" src="img\q6d8h7l8.bmp" alt="me!" onClick="openWindow();">
+    </div>
+  </section>
+
+  <section id="list">
+  </section>
+
+  <dialog id="comingSoon">
+    <img id="comingSoonImg" src="img/coming_soon_sign.jpg" alt="me!" width="80%" height="80%">
+    <button type="button" onclick="closeWindow()">OK</button>
+  </dialog>
+
+  <footer>
+    <img class="subMenu" id="subMenu1" title="settings" src="img\connectPeople.png" alt="settings"
+      onClick="openWindow();">
+    <img class="subMenu" id="subMenu2" title="add a Friend" src="img\settings.png" alt="add!"
+      onClick="openWindow();">
+    <img id="menuAdd" title="menu" src="img\ic_launcher_add_button-playstore.png" alt="menu">
+  </footer>
+
+  <!-- Scripts -->
+  <script src="use_serviceworker.js"></script>
+  <script src="main.js"></script>
+  <script defer src="scriptIndex.js"></script>
+
+</body>
+
+</html>
